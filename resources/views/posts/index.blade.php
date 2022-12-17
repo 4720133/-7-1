@@ -1,17 +1,13 @@
 <!DOGTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getlocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>
-            Blog
-        </title>
+        <title>Blog</title>
         <!-- Font -->
         <link herf="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <h1>
-            Blog Name
-        </h1>
+        <h1>Blog Name</h1>
         <a href='/posts/create'>create</a>
         <div class='posts'>
              @foreach ($posts as $post)
